@@ -46,9 +46,9 @@ All firmware must be compiled and uploaded manually by the user.
 
 ---
 
-## 🔧 What is bl8ck0ut?
+## 🔧 What is Bl8ck0ut?
 
-**bl8ck0ut** is a dual-ESP32 hardware project combining:
+**Bl8ck0ut** is a dual-ESP32 hardware project combining:
 
 - A **command-line style web interface** hosted on one ESP32 to control a relay timer.
 - A second ESP32 acting as a **radio-frequency signal transmitter**, utilizing two NRF24L01+ modules on separate SPI buses (HSPI and VSPI), capable of sweeping or randomizing across channels.
@@ -66,36 +66,6 @@ This is an **educational and experimental system** demonstrating:
 
 ---
 
-## 🌐 Web Terminal
-
-The primary interface is an in-browser terminal hosted via WiFi AP mode (`SSID: Bl8ck0ut`). Users can issue simple CLI-style commands such as:
-
-- blackout start -t 60
-- blackout stop
-- blackout status
-
-
-This controls the power relay for the second ESP32 via a countdown timer.
-
----
-
-## 📦 Hardware Requirements
-
-- 2x ESP32 Dev Boards (Recommended: CH340 ESP32-Wroom-32S)
-- 2x nRF24L01+ Modules
-- 1x Relay Module (3.3V compatible)
-- 1x OLED Display (SSD1306, I²C)
-- Breadboard / Prototype board (Not necessary but strongly Recommended)
-- Jumper Wires
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE), with the condition that **it must not be used for harmful, malicious, or unlawful purposes**.
-
----
-
 ## 👨‍💻 Why I Built This
 
 I created **bl8ck0ut** to explore:
@@ -109,6 +79,56 @@ If you’re interested in electronics, signal processing, or embedded networking
 
 ---
 
+# Assembly
+
+## 📦 Hardware Requirements
+
+- 2x ESP32 Dev Boards (Recommended: CH340 ESP32-Wroom-32S)
+- 2x nRF24L01+ Modules
+- 1x Relay Module
+- 1x 0.96 inch OLED Display (SSD1306, I²C)
+- Breadboard / Prototype board (Not necessary but strongly Recommended)
+- Jumper Wires
+
+---
+
+## Step 1: wiring everythin up
+
+Go to /wiring and wire everything up, following the instructions in the dedicated readme file.
+
+
+## Step 2: printing the case
+
+Go to /case and 3D print the necessary parts, following the instructions in the dedicated readme file. If you dont own a 3D printer there are some great online services like: 
+
+- [all3dp.com](https://all3dp.com) 
+- [sculpteo.com](https://sculpteo.com) 
+- [hubs.com](https://hubs.com)
+
+  After that, place the electronics in the case accordingly, glue it together and power it on 
+
+
+## Step 3: 🌐 Web Terminal
+1. After Powering it on you should see a new acces point called "Bl8ck0ut" with the default password beeing "12345678"
+2. connect to the acces point and open a webbrowser to visit the ip 192.168.4.1
+3. Then you should be greeted by the web interface for Bl8ck0ut
+
+The primary interface is an in-browser terminal hosted via WiFi AP mode (`SSID: Bl8ck0ut`). Users can issue simple CLI-style commands such as:
+
+- blackout start -t 60
+- blackout stop
+- blackout status
+
+
+This controls the power relay for the second ESP32 via a countdown timer.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE), with the condition that **it must not be used for harmful, malicious, or unlawful purposes**.
+
+---
 
 ## 🗨️ Contact
 
