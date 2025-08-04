@@ -7,6 +7,8 @@
 **Author:** [8nt0n](https://github.com/8nt0n)  
 **Status:** Educational Prototype | Proof of Concept  
 
+[official website](https://bl8ck0ut.netlify.app/)
+
 ## 🚨 Legal Notice
 
 This project is strictly for **educational**, **research**, and **demonstration** purposes.
