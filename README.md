@@ -22,8 +22,7 @@ This software is provided for educational purposes only and must not be used in 
 ---
 
 ## 🧭 Ethics & Responsibility
-This project aligns with the principles of ethical hacking, responsible disclosure, and STEM education. It should only be used in settings where:
-
+This project aligns with the principles of responsible cybersecurity research, ethical STEM practices, and responsible disclosure.
 You have explicit permission to operate and test the hardware
 
 No other devices, networks, or people are affected
@@ -138,4 +137,4 @@ Reach out via GitHub: [github.com/8nt0n](https://github.com/8nt0n)
 
 ---
 
-> 🕊️ **Use responsibly. Hack ethically. Build boldly.**
+> 🕊️ **Use responsibly. Build boldly. Explore securely.**
